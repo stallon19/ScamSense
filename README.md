@@ -1,4 +1,5 @@
 # ScamSense
+<<<<<<< HEAD
 
 AI scam checker and scam-resistance trainer for students and families in India.
 Built for PromptWars x Error Zero. It is an AI assistant, not an autonomous agent.
@@ -68,3 +69,6 @@ Fix a wrong verdict by editing the prompts in `server/services/prompts.js`.
 ## Not built yet (roadmap, shown as plans on the site)
 
 More Indian languages, voice call practice, WhatsApp share, campus alerts.
+=======
+ScamSense is an AI-powered tool that detects scams in messages, links, and offers, explains the warning signs, and teaches users how to stay safe online.
+>>>>>>> 57e80610c74b6dc17ad6353c3b2ea231c3cb4e4f
