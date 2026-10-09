@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Check a message | ScamSense</title>
+<meta name="description" content="Paste a suspicious message or upload a screenshot. ScamSense shows a verdict, the exact red flags and what to do next.">
+<meta name="theme-color" content="#F7F5F0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+<script src="/js/theme-init.js"></script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div class="progress" id="progress"></div>
+<div id="site-nav"></div>
+<main id="main">
+
+<section class="page">
+  <div class="mid">
+    <div class="page-head" data-depth="0.06">
+      <h1 class="h-lg" data-split>Is this message safe?</h1>
+      <p class="lead">Paste the message or upload a screenshot. You get a verdict, the exact words that give it away, and what to do next.</p>
+    </div>
+    <div class="panel">
+      <div class="field-head"><label for="msg" class="label">Message</label><button type="button" class="link-btn" id="sample" data-noroll>Load sample</button></div>
+      <textarea id="msg" class="input" maxlength="2000" placeholder="Paste an SMS, WhatsApp message, email or offer letter here"></textarea>
+      <div class="field-head" style="margin:8px 0 0"><span class="small muted">Hindi, English and Hinglish messages are supported.</span><span class="small muted" id="count">0 / 2,000</span></div>
+      <div class="upload-prev" id="prev"><img id="prevImg" alt="Screenshot preview"><span id="prevName"></span><button type="button" class="btn btn-ghost btn-sm" id="rm">Remove</button></div>
+      <div class="actions-row">
+        <input type="file" id="file" accept="image/png,image/jpeg,image/webp" hidden>
+        <button type="button" class="btn btn-ghost" id="pick">Upload screenshot</button>
+        <label class="label" for="lang">Explain in</label>
+        <select id="lang" class="select"><option value="en">English</option><option value="hi">Hindi</option></select>
+        <span class="spacer"></span>
+        <button type="button" class="btn btn-primary" id="go">Check message</button>
+      </div>
+      <p class="notice"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>ScamSense does not store your messages. Your text is sent to Google Gemini for analysis. Do not paste passwords, OTPs or card numbers.</span></p>
+      <div class="error" id="err" role="alert"></div>
+    </div>
+
+    <div class="skel" id="skel" aria-hidden="true"><i style="height:190px"></i><i style="height:130px"></i><i style="height:230px"></i></div>
+    <div id="result" aria-live="polite"></div>
+
+    <div class="history-wrap" id="histWrap" hidden>
+      <div class="field-head"><h2 class="h-md">Recent checks on this device</h2><button type="button" class="link-btn" id="clearHist" data-noroll>Clear history</button></div>
+      <p class="small muted" style="margin:0">Saved only in this browser. It never leaves your device.</p>
+      <div class="hist" id="hist"></div>
+    </div>
+
+    <div class="scam-types">
+      <div><b>Fake urgency</b><span>Messages that demand action in minutes or hours, before you can think.</span></div>
+      <div><b>Bank impersonation</b><span>Claims that your account or card is blocked, with a link or number to fix it.</span></div>
+      <div><b>Fake links</b><span>Web addresses that copy a real bank or shop to steal your login or card.</span></div>
+      <div><b>Advance fee requests</b><span>A fee, deposit or processing charge before you get a job, prize or refund.</span></div>
+    </div>
+  </div>
+</section>
+</main>
+<div id="site-footer"></div>
+<script src="/js/layout.js" defer></script>
+<script src="/js/check.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ScamSense | Know if a message is a scam before you reply</title>
+<meta name="description" content="ScamSense checks suspicious messages, shows the exact words that give them away, predicts the scammer's next move and trains you to say no. Built for students and families in India.">
+<meta name="theme-color" content="#F7F5F0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+<script src="/js/theme-init.js"></script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div class="progress" id="progress"></div>
+<div id="intro" role="dialog" aria-label="ScamSense intro">
+  <button class="intro-skip" id="introSkip" type="button" data-noroll>Skip</button>
+  <div class="intro-inner">
+    <div class="intro-word">ScamSense</div>
+    <p class="intro-line v-scam">Your account will be <mark class="hl" style="--i:1;--base:.55s">blocked today</mark>. Reply now.</p>
+  </div>
+</div>
+<div id="site-nav"></div>
+<main id="main">
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <h1 class="h-xl" data-split>Know if a message is a scam before you reply.</h1>
+      <p class="lead">ScamSense checks suspicious messages, shows exactly which words give them away, predicts what the scammer will do next, and trains you to say no.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/check" data-magnet>Check a message</a>
+        <a class="btn btn-ghost" href="/practice">Try Practice Mode</a>
+      </div>
+      <ul class="hero-note">
+        <li>Free to use</li>
+        <li>English or Hindi explanations</li>
+        <li>Built for students and families in India</li>
+      </ul>
+    </div>
+    <div class="stage" role="img" aria-label="Example: a fake bank message with suspicious phrases underlined, a Scam verdict, the scammer's likely next move, and a practice chat.">
+      <div class="layer l-sms" data-depth="0.02"><div class="pane">
+        <div class="pane-head"><span>SMS from an unknown number</span><span class="tag">Example</span></div>
+        <p class="sms-text v-scam">Your SBI account will be <mark class="hl" style="--i:1;--base:.5s">blocked today<sup>1</sup></mark>. <mark class="hl" style="--i:2;--base:.5s">Update KYC<sup>2</sup></mark> now at <mark class="hl" style="--i:3;--base:.5s">sbi-kyc-update.in<sup>3</sup></mark></p>
+      </div></div>
+      <div class="layer l-verdict" data-depth="0.07"><div class="pane">
+        <div class="pane-head"><span>Verdict</span><span class="tag">Example</span></div>
+        <div class="verdict-stamp"><strong>Scam</strong><span>96% confidence</span></div>
+        <p class="small muted" style="margin:8px 0 0">3 red flags found</p>
+      </div></div>
+      <div class="layer l-next" data-depth="0.12"><div class="pane">
+        <div class="pane-head"><span>What happens next</span></div>
+        <ul class="next-list"><li>A caller says they are a bank officer</li><li>You are asked to install a support app</li><li>You are asked for your OTP</li></ul>
+      </div></div>
+      <div class="layer l-chat" data-depth="0.18"><div class="pane">
+        <div class="pane-head"><span>Practice Mode</span></div>
+        <div class="bubble">Sir, share the OTP in 2 minutes.</div>
+        <div class="bubble">I will call the bank myself.</div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="problem">
+  <div class="container">
+    <div class="section-head"><h2 class="h-lg" data-split>Scams target students every day.</h2><p class="lead">They look different, but they use the same few tricks. Once you can see the trick, it stops working.</p></div>
+    <div class="rows">
+      <div class="row reveal"><h3>Internships that ask you to pay.</h3><p><b>A real employer never charges a fee</b> to give you a job, a seat or an internship.</p></div>
+      <div class="row reveal"><h3>UPI refunds that ask for your PIN.</h3><p><b>You never need a PIN to receive money.</b> If someone asks, it is a trap.</p></div>
+      <div class="row reveal"><h3>KYC messages that threaten to block you.</h3><p><b>Banks do not ask for your OTP</b> or card details on a call or an SMS.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="how">
+  <div class="container flow">
+    <div class="flow-aside">
+      <h2 class="h-lg" data-split>From a suspicious message to a safe reply.</h2>
+      <p class="lead">Four short steps. Nothing to install and no account to make.</p>
+      <div><a class="btn btn-primary" href="/check">Check a message</a></div>
+    </div>
+    <ol class="steps">
+      <li class="step"><div><h3>Paste it or upload a screenshot</h3><p>Works with SMS, WhatsApp, email and offer letters. Hindi and Hinglish messages are fine.</p></div></li>
+      <li class="step"><div><h3>See the verdict and the proof</h3><p>You get Safe, Risky or Scam, and the exact words that give it away, underlined in the message.</p></div></li>
+      <li class="step"><div><h3>See the scammer's next move</h3><p>ScamSense tells you what usually happens next, so you recognise it when it comes.</p></div></li>
+      <li class="step"><div><h3>Practise saying no</h3><p>Chat with an AI scammer in a safe space. You get a score and a list of moments where you almost fell for it.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="forecast">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="h-lg" data-split>What to watch for this season.</h2>
+      <p class="lead">Scammers follow the calendar. Right now: <b id="nowSeason" style="color:var(--ink)">this season</b>. These are commonly seen patterns, not live data. Scammers use these themes all year.</p>
+    </div>
+    <div class="seasons" id="seasons"></div>
+    <p style="margin-top:28px"><a class="link-btn" href="/forecast">See the full forecast and habits</a></p>
+  </div>
+</section>
+
+<section class="section alt" id="tools">
+  <div class="container">
+    <div class="section-head"><h2 class="h-lg" data-split>Two tools. One goal.</h2></div>
+    <div class="tools">
+      <div class="tool t-check" data-depth="0.03">
+        <div style="display:grid;gap:14px"><h3 class="h-md">Message Checker</h3><p>Know what you are looking at before you reply or tap anything.</p></div>
+        <ul><li>Verdict with a confidence level</li><li>Suspicious words underlined in your message</li><li>Clear steps for what to do now</li><li>A prediction of the scammer's next move</li></ul>
+        <div><a class="btn btn-primary" href="/check">Open the checker</a></div>
+      </div>
+      <div class="tool t-practice" data-depth="0.1">
+        <div style="display:grid;gap:14px"><h3 class="h-md">Practice Mode</h3><p>Build the reflex. Five real-world scenarios from India.</p></div>
+        <ul><li>Chat with a simulated scammer</li><li>Score out of 100</li><li>Your own words quoted back to you</li><li>Three tips for next time</li></ul>
+        <div><a class="btn btn-on-accent" href="/practice">Start practice</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="benefits">
+  <div class="container">
+    <div class="section-head"><h2 class="h-lg" data-split>Why it works.</h2></div>
+    <div class="benefits">
+      <div class="benefit reveal"><h3>It shows the proof</h3><p>Not just a label. You see the exact words that make a message suspicious.</p></div>
+      <div class="benefit reveal"><h3>It predicts the next move</h3><p>Knowing what comes next takes away the scammer's surprise and pressure.</p></div>
+      <div class="benefit reveal"><h3>It trains your reflex</h3><p>Reading about scams is not enough. Practice builds the habit of stopping and verifying.</p></div>
+      <div class="benefit reveal"><h3>It reads screenshots</h3><p>Upload a picture of the message. No need to retype anything.</p></div>
+      <div class="benefit reveal"><h3>Plain English or Hindi</h3><p>Short, simple sentences. No technical words.</p></div>
+      <div class="benefit reveal"><h3>Private by design</h3><p>ScamSense does not store your messages and has no accounts or tracking.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="about">
+  <div class="container about">
+    <div class="about-copy">
+      <h2 class="h-lg" data-split>Why ScamSense.</h2>
+      <p>Most tools only say scam or not scam. ScamSense also teaches you to recognise the trick, so the next one fails too.</p>
+      <p class="muted" style="font-size:1rem">ScamSense is an AI assistant. It can be wrong, so do not use it as proof. When you are unsure, call your bank on the number printed on your card.</p>
+      <div><a class="link-btn" href="/about">Read more about ScamSense</a></div>
+    </div>
+    <div class="help" data-depth="0.06">
+      <h3 class="h-md">Already lost money?</h3>
+      <div class="num">1930</div>
+      <p class="muted" style="margin:0">Call the National Cyber Crime helpline, or report at cybercrime.gov.in. Reporting quickly gives the best chance of stopping the transfer.</p>
+      <div><a class="btn btn-ghost btn-sm" href="/help">Open the checklist</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="roadmap">
+  <div class="container">
+    <div class="section-head"><h2 class="h-lg" data-split>What comes next.</h2><p class="lead">These are plans. They are not built yet.</p></div>
+    <div class="road">
+      <div class="road-item reveal"><h3>More Indian languages</h3><p>Explanations in Tamil, Telugu, Kannada, Marathi and Bengali.</p></div>
+      <div class="road-item reveal"><h3>Voice call practice</h3><p>Practise against a spoken scam call, the way most scams really happen.</p></div>
+      <div class="road-item reveal"><h3>Share from WhatsApp</h3><p>Send a message to ScamSense without copying and pasting.</p></div>
+      <div class="road-item reveal"><h3>Campus alerts</h3><p>Let colleges warn students when a new scam is going around.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-wrap">
+  <div class="container">
+    <div class="cta">
+      <div class="cta-in" data-depth="0.07">
+        <h2 class="h-lg" data-split>Check your first message.</h2>
+        <p>It takes a few seconds. If it turns out to be safe, you lose nothing.</p>
+        <a class="btn btn-on-accent" href="/check">Check a message</a>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="/js/layout.js" defer></script>
+<script src="/js/seasons.js" defer></script>
+</body>
+</html>

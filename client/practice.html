@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Practice Mode | ScamSense</title>
+<meta name="description" content="Practise resisting scams in a safe chat with an AI scammer. Get a score, see where you slipped and learn three tips.">
+<meta name="theme-color" content="#F7F5F0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+<script src="/js/theme-init.js"></script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div class="progress" id="progress"></div>
+<div id="site-nav"></div>
+<main id="main">
+
+<section class="page">
+  <div class="mid">
+    <div class="page-head" data-depth="0.06">
+      <h1 class="h-lg" data-split>Practise saying no.</h1>
+      <p class="lead">An AI plays a scammer. You reply the way you would in real life. At the end you get a score and see exactly where you almost fell for it.</p>
+    </div>
+
+    <div id="pickView">
+      <div class="scenarios" id="scenarios"></div>
+      <p class="warn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l10 18H2z"/><path d="M12 10v4M12 17.5v.5"/></svg><span>This is practice only. Never type your real PIN, OTP, card number or password. The scammer is an AI and none of the messages are real.</span></p>
+    </div>
+
+    <div id="chatView">
+      <div class="panel chat">
+        <div class="chat-top"><div><b id="scnTitle"></b><div class="small muted">Practice simulation. This is not a real person.</div></div><span class="tag" id="turns">Your messages: 0 of 8</span></div>
+        <div class="chat-log" id="log" role="log" aria-live="polite" aria-label="Practice chat"></div>
+        <form class="chat-form" id="form">
+          <label class="sr-only" for="inp">Your reply</label>
+          <textarea id="inp" rows="1" maxlength="500" placeholder="Type your reply"></textarea>
+          <button class="btn btn-primary" type="submit" id="send">Send</button>
+        </form>
+      </div>
+      <div class="error" id="err" role="alert"></div>
+      <div class="chat-bar">
+        <span class="small muted">You can end the chat any time after your first reply.</span>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn btn-ghost" id="restart" type="button">Change scenario</button>
+          <button class="btn btn-ghost" id="end" type="button">End and see score</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="scoreView" aria-live="polite"></div>
+  </div>
+</section>
+</main>
+<div id="site-footer"></div>
+<script src="/js/layout.js" defer></script>
+<script src="/js/practice.js" defer></script>
+</body>
+</html>
