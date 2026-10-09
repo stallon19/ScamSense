@@ -47,8 +47,4 @@ app.use((err, req, res, next) => {
 });
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  const k = process.env.GEMINI_API_KEY;
-  console.log(`ScamSense running at http://localhost:${port}`);
-  if (!k || k.startsWith('your_')) console.warn('WARNING: GEMINI_API_KEY is missing. Copy .env.example to .env and add your key.');
-});
+module.exports = app;
